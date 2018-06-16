@@ -14,7 +14,7 @@ function installIIS () {
     
 }
 
-function upzip ($file, $dir) {
+function unzip ($file, $dir) {
     #确保目标文件夹必须存在
     if(!(Test-Path $dir)) {
         mkdir $dir
@@ -48,7 +48,7 @@ function downFiles() {
     down 'https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.exe'
     down 'http://curl.haxx.se/ca/cacert.pem'
     down 'https://www.heidisql.com/downloads/releases/HeidiSQL_9.5_Portable.zip' 'HeidiSQL.zip'
-    down 'https://windows.php.net/downloads/releases/php-5.6.35-nts-Win32-VC11-x64.zip' 'php.zip'
+    down 'https://windows.php.net/downloads/releases/php-5.6.36-nts-Win32-VC11-x64.zip' 'php.zip'
     down 'https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.11-winx64.zip' 'mysql.zip'
     down 'https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe' 'vc14.exe'
     down 'https://download.microsoft.com/download/9/C/D/9CD480DC-0301-41B0-AAAB-FE9AC1F60237/VSU4/vcredist_x64.exe' 'vc11.exe'
